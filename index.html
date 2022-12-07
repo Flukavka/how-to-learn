@@ -1,13 +1,163 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Научиться учиться</title>
-</head>
-<body>
-  <div class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Научиться учиться</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- Начало блока header -->
+      <header class="header">
+        <div class="logo z-index-1">
+          <img
+            class="logo_place_header"
+            src="./images/logo_place_header.svg"
+            alt="Яндекс Практикум"
+          />
+        </div>
 
-  </div>
-</body>
+        <h1 class="header__title header__title_place z-index-1 margin-0">
+          Научиться учиться
+        </h1>
+
+        <p class="header__subtitle z-index-1 margin-0">
+          Какие современные и эффективные подходы к обучению вы можете
+          использовать в своей жизни?
+          <a class="header__link" href="#">Узнать &#8594;</a>
+        </p>
+
+        <div class="header__square-pic"></div>
+
+        <img
+          class="header__main-illustration"
+          src="./images/header-image.png"
+          alt="Картина - Опять двойка"
+        />
+      </header>
+      <!-- Конец блока header -->
+
+      <!-- Начало блока main -->
+      <main class="content">
+        <!-- Начало секции description -->
+        <section class="description">
+          <div class="two-columns">
+            <p class="margin-0 two-columns__brief">
+              Главные проблемы в обучении
+            </p>
+
+            <div class="two-columns__main-text">
+              <p class="margin-0 two-columns__paragraph">
+                Ни в школе, ни в институте нас не учат тому, как правильно
+                изучать материал. Мы готовимся к экзаменам и учим билеты. Мы
+                тренируемся решать однообразные задачи, чтобы лучше сдать тест,
+                но часто в итоге это не дает нам реального знания. Зубрежка
+                быстро выветривается и не приносит пользы.
+              </p>
+
+              <p class="margin-0 two-columns__paragraph">
+                <span class="two-columns__span-accent">Вывод:&nbsp;</span
+                >учиться тоже нужно уметь, но почему-то этому мало где учат. Что
+                с этим делать?
+              </p>
+
+              <p class="margin-0 two-columns__paragraph">
+                Конкретные техники и упражнения помогают изменить подход к
+                обучению, сделать его эффективным и захватывающим. Эти же
+                техники применяются на примере обучения в Практикуме.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Конец секции description -->
+
+        <!-- Начало секции digits -->
+        <section class="digits">
+          <div class="section-title">
+            <h3 class="margin-0 section-title__heading">Цифры и факты</h3>
+          </div>
+          <div class="section-subtitle">
+            <p class="margin-0 section-subtitle__text">Про учёбу и мозг</p>
+          </div>
+          <div class="table">
+            <div class="table__cell">
+              <p class="margin-0 table__heading">86 миллиардов</p>
+              <p class="margin-0 table__text">
+                Число нейронов в мозге человека
+              </p>
+            </div>
+
+            <div class="table__cell">
+              <p class="margin-0 table__heading">2.1 миллиарда</p>
+              <p class="margin-0 table__text">
+                Число нуждающихся в повышении квалификации
+              </p>
+              <p class="margin-0 table__text">Всемирный Банк, 2017</p>
+            </div>
+
+            <div class="table__cell">
+              <p class="margin-0 table__heading">1000 терабайт</p>
+              <p class="margin-0 table__text">Объём памяти человека</p>
+            </div>
+
+            <div class="table__cell">
+              <p class="margin-0 table__heading">500 триллионов</p>
+              <p class="margin-0 table__text">
+                Число ответственных за обучение нервных синапсов у взрослого
+                человека
+              </p>
+            </div>
+
+            <div class="table__cell">
+              <p class="margin-0 table__heading">420 миллионов</p>
+              <p class="margin-0 table__text">
+                Число взрослых людей моложе 25 лет, не имеющих образования для
+                трудоустройства
+              </p>
+              <p class="margin-0 table__text">Всемирный Банк, 2017</p>
+            </div>
+
+            <div class="table__cell">
+              <p class="margin-0 table__heading">17–20 лет</p>
+              <p class="margin-0 table__text">Пик обучаемости</p>
+            </div>
+
+            <div class="table__cell">
+              <p class="margin-0 table__heading">1885 год</p>
+              <p class="margin-0 table__text">Открытие кривой забывания</p>
+            </div>
+
+            <div class="table__cell">
+              <p class="margin-0 table__heading">1889 год</p>
+              <p class="margin-0 table__text">Открытие условного рефлекса</p>
+            </div>
+          </div>
+        </section>
+        <!-- Конец секции digits -->
+
+        <!-- Начало секции feynman -->
+        <section class="feynman"></section>
+        <!-- Конец секции feynman -->
+
+        <!-- Начало секции kaufman -->
+        <section class="kaufman"></section>
+        <!-- Конец секции kaufman -->
+      </main>
+      <!-- Конец блока main -->
+
+      <!-- Начало блока footer -->
+      <footer class="footer">
+        <div class="logo">
+          <img
+            class="logo_place_footer"
+            src="./images/logo_place_footer.svg"
+            alt="Яндекс Практикум"
+          />
+        </div>
+      </footer>
+      <!-- Конец блока footer -->
+    </div>
+  </body>
 </html>
