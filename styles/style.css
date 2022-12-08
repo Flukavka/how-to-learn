@@ -1,12 +1,8 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .z-index-1 {
@@ -25,6 +21,81 @@
   background-color: #1f1f1f;
 }
 
+.section-title {
+  width: 60%;
+}
+
+.section-titile_margin_bottom {
+  margin-bottom: 20px;
+}
+
+.section-title__heading {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.section-subtitle {
+  width: 60%;
+}
+
+.section-subtitle__text {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  text-align: center;
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.table_padding-top_m {
+  padding-top: 60px;
+}
+
+.table_padding-top_l {
+  padding-top: 80px;
+}
+
+.table_row-gap_m {
+  row-gap: 60px;
+}
+
+.table_row-gap_l {
+  row-gap: 80px;
+}
+
+.table__cell {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.table__cell_width_s {
+  width: 200px;
+}
+
+.table__cell_width_m {
+  width: 250px;
+}
+
+.table__heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.table__text {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
 /* Начало стилей блока header */
 .header {
   height: 100vh;
@@ -32,7 +103,6 @@
   max-height: 756px;
   display: flex;
   position: relative;
-  /* выше установили ограничения для секции */
 }
 
 .logo_place_header {
@@ -85,12 +155,13 @@
 }
 /* Конец стилей блока header */
 
-.content_margin_top:not(:last-child) {
+/* Начало стилей блока content */
+.content_margin_top {
   margin-top: 100px;
 }
 
-.content_margin_top:last-child {
-  margin-top: 90px;
+.content_padding-t-b_90 {
+  padding: 90px 0;
 }
 
 /* Начало стилей секции description */
@@ -135,69 +206,9 @@
   flex-direction: column;
   align-items: center;
 }
-
-.section-title {
-  width: 60%;
-}
-
-.section-titile_margin_bottom {
-  margin-bottom: 20px;
-}
-
-.section-title__heading {
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 1.15;
-  text-align: center;
-}
-
-.section-subtitle {
-  width: 60%;
-}
-
-.section-subtitle__text {
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 34px;
-  text-align: center;
-}
-
-.table {
-  width: 1100px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.table_padding-top_m {
-  padding-top: 60px;
-}
-
-.table_row-gap_m {
-  row-gap: 60px;
-}
-
-.table__cell {
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.table__heading {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.15;
-}
-
-.table__text {
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.2;
-}
 /* Конец стилей секции digits */
 
-/*  */
+/* Начало стилей секции feynman */
 .feynman {
   height: 890px;
   padding-top: 100px;
@@ -244,13 +255,39 @@
   top: 50%;
   right: 48px;
 }
+/* Начало стилей секции feynman */
 
-/*  */
+/* Начало стилей секции kaufman */
+.kaufman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
 
-/* и элемента с модификатором вида ключ-значение */
-/* .table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-} */
+.kaufman_theme_dark {
+  background-color: #1f1f1f;
+  z-index: -2;
+}
+
+.kaufman[class*="_theme_dark"] {
+  color: #fff;
+}
+
+.kaufman__triangle {
+  width: 990px;
+  height: 800px;
+  position: absolute;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-repeat: no-repeat;
+  top: 0;
+  background-size: 88%;
+  right: -325px;
+  z-index: -1;
+}
+/* Конец стилей секции kaufman */
+/* Конец стилей блока content */
+
+/* Начало стилей блока footer */
+/* Конец стилей блока footer */
