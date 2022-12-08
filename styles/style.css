@@ -17,12 +17,19 @@
   margin: 0;
 }
 
+.background-color_gray-light {
+  background-color: #f2f2f2;
+}
+
+.background-color_gray-dark {
+  background-color: #1f1f1f;
+}
+
 /* Начало стилей блока header */
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  background-color: #f2f2f2;
   display: flex;
   position: relative;
   /* выше установили ограничения для секции */
@@ -78,14 +85,13 @@
 }
 /* Конец стилей блока header */
 
-/* TODO отступы с помощью псевдоклассов */
-/* .content:has(section:not(:last-of-type)) {
+.content_margin_top:not(:last-child) {
   margin-top: 100px;
-} */
+}
 
-/* .content:not(:last-of-type) {
-  margin-top: 100px;
-} */
+.content_margin_top:last-child {
+  margin-top: 90px;
+}
 
 /* Начало стилей секции description */
 .two-columns {
@@ -134,6 +140,10 @@
   width: 60%;
 }
 
+.section-titile_margin_bottom {
+  margin-bottom: 20px;
+}
+
 .section-title__heading {
   font-size: 60px;
   font-weight: 600;
@@ -159,8 +169,19 @@
   flex-wrap: wrap;
 }
 
+.table_padding-top_m {
+  padding-top: 60px;
+}
+
+.table_row-gap_m {
+  row-gap: 60px;
+}
+
 .table__cell {
   width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .table__heading {
@@ -174,8 +195,57 @@
   font-weight: normal;
   line-height: 1.2;
 }
-
 /* Конец стилей секции digits */
+
+/*  */
+.feynman {
+  height: 890px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.feynman__background-image {
+  background-image: url(../images/feynman.png);
+  background-repeat: no-repeat;
+  background-size: 867px 637px;
+  background-position: left bottom;
+}
+
+.feynman__title {
+  width: 648px;
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.feynman__subtitle {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.feynman__link {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.feynman__link_place {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+}
+
+/*  */
 
 /* и элемента с модификатором вида ключ-значение */
 /* .table__cell_theme_dark {
