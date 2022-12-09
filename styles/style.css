@@ -2,7 +2,7 @@
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
-  font-family: Arial, sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 .section-title {
@@ -69,6 +69,8 @@
 
 .logo {
   z-index: 1;
+  width: 228px;
+  height: 32px;
 }
 
 .logo_place_header {
@@ -119,14 +121,16 @@
   right: 0;
   bottom: 0;
 }
+
 /* Конец стилей блока header */
+
 
 /* Начало стилей блока content */
 :is(.description, .digits, .feynman) {
   margin-top: 100px;
 }
-/* Начало стилей секции description */
 
+/* Начало стилей секции description */
 .two-columns {
   display: flex;
   align-items: baseline;
@@ -162,7 +166,9 @@
 .two-columns__span-accent {
   font-weight: 600;
 }
+
 /* Конец стилей секции description */
+
 
 /* Начало стилей секции digits */
 .digits {
@@ -170,7 +176,9 @@
   flex-direction: column;
   align-items: center;
 }
+
 /* Конец стилей секции digits */
+
 
 /* Начало стилей секции feynman */
 .feynman {
@@ -215,7 +223,9 @@
   top: 50%;
   right: 48px;
 }
+
 /* Конец стилей секции feynman */
+
 
 /* Начало стилей секции kaufman */
 .kaufman {
@@ -228,7 +238,7 @@
   padding: 90px 0;
 }
 
-[class*="_theme_dark"] {
+[class*='_theme_dark'] {
   color: #fff;
 }
 
@@ -252,13 +262,75 @@
   right: -325px;
   z-index: 1;
 }
+
 /* Конец стилей секции kaufman */
 /* Конец стилей блока content */
+
 
 /* Начало стилей блока footer */
 .footer {
   background-color: #1f1f1f;
   min-height: 350px;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 40px;
+  box-sizing: border-box;
 }
+
+.footer__columns {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column-heading {
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.footer__column-links {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.footer__column-links:last-of-type {
+  margin-bottom: 16px;
+}
+
+.footer__columns_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__author {
+  margin: 18px 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.footer__columns_content_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__columns_content_social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__social-icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
 /* Конец стилей блока footer */
