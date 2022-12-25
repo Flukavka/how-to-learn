@@ -1,11 +1,8 @@
-.logo {
-  z-index: 1;
-  width: 228px;
-  height: 32px;
+.resources__link {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
 
-.logo:hover {
+.resources__link:hover {
   opacity: 0.6;
 }
